@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.use(cors());
+app.get("/", (req, res) => res.send("Express on Vercel"));
 // Use routes
 app.use('/user', userRoutes);
 app.use('/log', logRoutes);
