@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const { Student, Class, Subject } = require('../models/studentModel');
 const Log = require('../models/logModel');
-const { authenticateToken } = require('../Middleware/authMiddleware')
+const { authenticateToken } = require('../middleware/authMiddleware')
 const { authorizeRoles } = require('../middleware/studentMiddleware');
 // router.post('/addClass', authenticateToken, async (req, res) => {
 //     try {
