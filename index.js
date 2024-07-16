@@ -6,7 +6,7 @@ const logRoutes = require('./routes/logRoutes');
 const studentRoutes = require('./routes/studentRoutes');
 const classroute = require('./routes/classRoutes');
 const cors = require('cors');
-
+require('dotenv').config();
 
 const app = express();
 app.use(express.json());
